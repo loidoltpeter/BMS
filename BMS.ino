@@ -160,9 +160,11 @@ void measure() {
 
   if(soc > 100) {
     soc = 100;
+    handshakeNr = 0;
   }
   if(soc < 0) {
     soc = 0;
+    handshakeNr = 0;
   }
 
   bmsVoltage = voltage * 10;
